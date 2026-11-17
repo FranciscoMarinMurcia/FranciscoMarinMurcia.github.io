@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img_original/favicon.ico">
+
+    <title>Optimización de Imágenes</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #73717e;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        footer {
+            background-color: #666379;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p><a href="index.html"><img src="img_original/casa.ico" alt="Volver a la página principal" width="30" height="30"></a></p>
+        <h1>Optimización de imágenes</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tabla de optimización de imágenes</h2>
+            <p>En esta tabla se muestran las imágenes usadas en la web, su peso original y su peso después de optimizarlas.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre de imagen</th>
+                        <th>Descripción alt</th>
+                        <th>Tamaño sin optimizar</th>
+                        <th>Tamaño optimizado</th>
+                        <th>Plataforma utilizada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>cabecera.gif</td>
+                        <td>cabecera animada</td>
+                        <td>8,75 MB</td>
+                        <td>4,33 MB</td>
+                        <td>gifgifs</td>
+                    </tr>
+                    <tr>
+                        <td>ejemplo.jpg</td>
+                        <td>Imagen de ejemplo para la sección de conceptos</td>
+                        <td>51 KB</td>
+                        <td>31 KB</td>
+                        <td>Squoosh</td>
+                    </tr>
+                    <tr>
+                        <td>fotoparaindex1.jpg</td>
+                        <td>Setup con portatil y codigo</td>
+                        <td>401 KB</td>
+                        <td>142 KB</td>
+                        <td>TinyPNG</td>
+                    </tr>
+                    <tr>
+                        <td>fotoparaindex2.jpg</td>
+                        <td>Portatil con código zoom</td>
+                        <td>283 KB</td>
+                        <td>96 KB</td>
+                        <td>TinyPNG</td>
+                    </tr>
+                    <tr>
+                        <td>fotoparaindex3.jpg</td>
+                        <td>Codigo en pantalla</td>
+                        <td>238 KB</td>
+                        <td>99 KB</td>
+                        <td>TinyPNG</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <!--suma de los pesos de todas las imágenes-->
+                        <td colspan="2">Total</td>
+                        <td>9,70 MB</td>
+                        <td>4,69 MB</td>
+                        <td>Ahorro: 52 %</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+<footer>
+        <p>&copy; 2026 Curro Marín Murcia - Práctica 02 HTML</p>
+        <p>Lenguaje de marcas y sistemas de gestión de información · Xaloc</p>   
+</footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img_original/favicon.ico">
+
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #73717e;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input[type="email"], select {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: aquamarine;
+        }
+        input[type="reset"] {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: lightcoral;
+        }
+        footer {
+            background-color: #666379;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p><a href="index.html"><img src="img_original/casa.ico" alt="Volver a la página principal" width="30" height="30"></a></p>
+    </header>
+    
+    <main>
+        <h1>Formulario de contacto</h1>
+        <p> El siguiente formulario se puede rellenar para valorar los conceptos.</p>
+        <form action="https://formspree.io/f/xzerekop" method="POST">
+            <label for="email">Email de contacto:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="concepto">Concepto evaluado:</label>
+            <select required id="concepto" name="concepto">
+                <option value="etiquetas">Etiquetas de texto</option>
+                <option value="listas">Listas</option>
+                <option value="imagenes">Imágenes</option>
+                <option value="tablas">Tablas</option>
+                <option value="formularios">Formularios</option>
+            </select>
+
+            <p>Valoración de la práctica:</p>
+            <input required type="radio" id="dificil" name="valoracion" value="dificil">
+            <label for="dificil">Difícil</label>
+            <br>
+            <input required type="radio" id="dificil_no" name="valoracion" value="dificil_no">
+            <label for="dificil_no">Difícil no, pero un poco larga sí</label>
+            <br>
+            <input required type="radio" id="normal" name="valoracion" value="normal">
+            <label for="normal">Normal</label>
+            <br>
+            <input required type="radio" id="facil" name="valoracion" value="facil">
+            <label for="facil">Fácil</label>
+            <br>
+            <input required type="radio" id="pan_comido" name="valoracion" value="pan_comido">
+            <label for="pan_comido">Pan comido</label>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+
+        </form>
+        <section>
+    <h2>¿Cómo funciona este formulario?</h2>
+    <p>
+        Este formulario usa <strong>Formspree</strong>, un servicio que permite recibir
+        por correo los datos de un formulario HTML sin necesidad de programar un servidor.
+    </p>
+    <p>
+        En la etiqueta form, el atributo action contiene
+        el <em>endpoint</em> de Formspree (la dirección a la que se envían los datos) y
+        method="POST" indica que los datos se envían de forma oculta, no en la URL.
+    </p>
+    <p>
+        Cada campo tiene un atributo name, que es el nombre con el que aparece
+        el dato en el correo recibido. Además, se ha añadido un segundo destinatario
+        (el profesor) desde el apartado <em>Linked Emails</em> de la cuenta de Formspree.
+    </p>
+</section>
+    </main>
+    
+
+<footer>
+        <p>&copy; 2026 Curro Marín Murcia - Práctica 02 HTML</p>
+        <p>Lenguaje de marcas y sistemas de gestión de información · Xaloc</p>   
+</footer>
+</body>
+</html>
